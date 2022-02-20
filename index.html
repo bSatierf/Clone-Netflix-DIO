@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,23 +8,45 @@
     <link rel="stylesheet" href="style/style.css">
     <title>Netflix</title>
 </head>
+
 <body>
     <header>
         <div class="container">
-            <img  class="logo" src="img/netflix-logo.svg" alt="Netflix">
+            <a href="#"><img class="logo" src="img/netflix-logo.svg" alt="Netflix"></a>
             <ul class="top-navigation-tab">
-                <li class="navigation-tab">Início</li>
-                <li class="navigation-tab">Séries</li>
-                <li class="navigation-tab">Filmes</li>
-                <li class="navigation-tab">Bombando</li>
-                <li class="navigation-tab">Minha Lista</li>
+                <li class="navigation-tab"><a href="#">Início</a></li>
+                <li class="navigation-tab"><a href="#">Séries</a></li>
+                <li class="navigation-tab"><a href="#">Filmes</a></li>
+                <li class="navigation-tab"><a href="#">Bombando</a></li>
+                <li class="navigation-tab"><a href="#">Minha Lista</a></li>
             </ul>
-
-            <nav>
-                <span class="iconify" data-icon="fluent:search-12-filled" style="color: white;"></span>
-                <span class="iconify" data-icon="clarity:bell-solid" style="color: white;" ></span>
-            </nav>
+            <div class="secondary-nav">
+                <nav class="nav-bar">
+                    <div class="nav-element">
+                        <div class="searchBox">
+                            <button class="search-btn"><span class="iconify" id="search"
+                                    data-icon="fluent:search-12-filled" style="color: white;"
+                                    data-width="30"></span></button>
+                        </div>
+                    </div>
+                    <div class="nav-element">
+                        <div class="notifications">
+                            <button class="notification-btn"><span class="iconify" id="bell" data-icon="bi:bell-fill"
+                                    style="color: white;" data-width="30"></span></button>
+                        </div>
+                    </div>
+                    <div class="nav-element">
+                        <div class="profile">
+                            <span><a href="#"><img class="profile-img" src="img/Netflix-avatar 32px.png" alt="yourAccount" width="34px" height="37px"></a></span>
+                            
+                        </div>
+                    </div>
+                </nav>
+            </div>
         </div>
+
+
+
     </header>
 
     <main>
@@ -36,4 +59,5 @@
     </main>
     <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
 </body>
+
 </html>

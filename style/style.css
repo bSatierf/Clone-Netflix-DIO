@@ -12,37 +12,100 @@
 
 /*elementos base*/
 
+
 body {
     background-color: var(--preta);
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
-}
-
-header .container {
-    display: flex;
-    align-items: center;
+    color: #fff;
+    z-index: 0;
+    overflow: hidden;
+    width: 100%;
+    
     
 }
 
+header .container {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,.7) 10%, rgba(0,0,0,0));
+    padding: 0 50px;
+    height: 68px;
+    z-index: 2;
+}
+
 header .logo {
-    height: 41px;
-    margin: 20px 20px 0 35px;
+    height: 35px;
+    margin: 5px 20px 0 35px;
 }
 
 header .top-navigation-tab {
     display: flex;
+    margin-top: 2.5px;
     
+}
 
-    list-style-type: none;
-
+.top-navigation-tab ul {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 2%;
+    font-size: 1.2rem;
+    margin-left: 10px; 
 }
 
 .navigation-tab {
     position: relative;
     display: flex;
-    align-items: center;
-    
-    padding: 0 4%;
-    font-size: 1.2rem;
-    margin-left: 18px;
+    padding: 0 10px;
+
 }
+
+.top-navigation-tab a {
+    color: #fff;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.top-navigation-tab a:hover {
+    color: #e5e5e5;
+    transition: .3s;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    right: 4%;
+    top: 2%;
+    justify-content: flex-end;
+    
+    
+}
+
+.search-btn, .notification-btn, .profile-img {
+    background: rgba(0,0,0,1);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+
+
+/*main-movie*/
+
+.main-movie {
+    background-image: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)) ,url(../img/drive\ Capa\ 1.jpeg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+}
+
+
+
+
