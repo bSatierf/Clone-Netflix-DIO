@@ -30,14 +30,14 @@ header .container {
     align-items: center;
     white-space: nowrap;
     background-image: linear-gradient(to bottom, rgba(0,0,0,.7) 10%, rgba(0,0,0,0));
-    padding: 0 50px;
+    padding: 0 15px;
     height: 68px;
     z-index: 2;
 }
 
 header .logo {
     height: 35px;
-    margin: 5px 20px 0 35px;
+    margin: 5px 20px 0 30px;
 }
 
 header .top-navigation-tab {
@@ -99,13 +99,64 @@ header .top-navigation-tab {
 /*main-movie*/
 
 .main-movie {
-    background-image: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)) ,url(../img/drive\ Capa\ 1.jpeg);
+    font-size: 16px;
+    background-image: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)), url(../img/drive\ Capa\ 1.jpeg);
+    height: 600px;
     background-size: cover;
-    height: 100vh;
-    width: 100%;
-    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
+.main-movie .description {
+    margin-bottom: 40px;
+    width: 50%;
+}
+
+.main-movie .title {
+    font-size: 40px;
+    font-family: 'Tourney';
+    margin-top: 15%;
+    margin-left: 15px;
+}
+
+.botao {
+    background-color: white;
+    color: #141414;
+    border: none;
+    padding: 10px 30px;
+    margin-right: 15px;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: .3s ease all;
+}
+
+.botao:hover {
+    opacity: .5;
+}
+
+
+
+.botao span {
+    margin-right: 8px;
+}
+
+#btn-inf {
+    background-color: rgba(109, 109, 110, 0.7);
+    color: #fff;
+}
+
+#btn-inf:hover {
+    background-color: rgba(109, 109, 110, 0.9);
+    color: #fff;
+}
+
+.main-movie .container {
+    width: 70%;
+    margin-left: 30px;
+}
 
 
 
