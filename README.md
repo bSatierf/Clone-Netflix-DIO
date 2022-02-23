@@ -2,6 +2,7 @@
 Desafio DIO - Recriando a Interface do Netflix 
 
 
-- Em desenvolvimento
+- Em desenvolvimento;
+- Não responsivo;
 
 
