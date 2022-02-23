@@ -1,2 +1,7 @@
 # Clone-Netflix-DIO
-Desafio DIO - Recriando a Interface do Netflix
+Desafio DIO - Recriando a Interface do Netflix 
+
+
+. Em desenvolvimento
+
+
